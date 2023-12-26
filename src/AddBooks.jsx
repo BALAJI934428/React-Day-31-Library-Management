@@ -15,7 +15,7 @@ const fromvalidationscheme = yup.object({
   published: yup
     .string()
     .required("Please fill the form")
-    .min(8, "minimum 8 character required"),
+    .min(4, "mention year of published"),
   publisher: yup
     .string()
     .required("Please fill the form")
