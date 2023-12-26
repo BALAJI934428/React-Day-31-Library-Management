@@ -99,14 +99,14 @@ export function AddBooks() {
                   {touched.author && errors.author ? errors.author : null}
                 </div>
                 <div className="mb-1">
-                  <label className="form-label">Published *</label>
+                  <label className="form-label">Published On *</label>
                   <input
                     onBlur={handleBlur}
                     className="form-control"
                     value={values.published}
                     name="published"
                     onChange={handleChange}
-                    type="text"
+                    type="number"
                     placeholder="published"
                   />
                   {touched.published && errors.published
@@ -158,7 +158,7 @@ export function AddBooks() {
                 </div>
 
                 <div className="mb-1">
-                  <label className="form-label">website</label>
+                  <label className="form-label">ISBN Number</label>
                   <input
                     className="form-control"
                     value={values.website}
